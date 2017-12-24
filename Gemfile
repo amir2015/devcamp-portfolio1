@@ -51,3 +51,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id'
 gem 'devise', '~> 4.2'
+gem "sentry-raven"
+group :development do 
+
+gem 'binding_of_caller', '~> 0.7.3'
+gem 'better_errors', '~> 2.4'
+end

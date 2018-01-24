@@ -1,9 +1,9 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_action :define_permitted_parameters, if: :devise_controller?
-
    include SetSource
    include CurrentUserConcern
+   include DefaultPageContent
 
 
 def define_permitted_parameters
